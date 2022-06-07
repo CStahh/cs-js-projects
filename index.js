@@ -1,5 +1,33 @@
+//Type coercion
+var a = 4;
+var b = 'hi';
+console.log(a + b);
+
+// == vs ===
+console.log(2 == '2');
+console.log(1 === '1');
+
+//Exercise 1
+var a = '10';
+var b = '5';
+var c = '20';
+var d = '30';
+
+var result;
+result = Math.ceil((Number(a) + Number(b) + Number(c) + Number(d)) / 4);
+
+var randomDieRollOutcome = Math.floor(Math.random() * 6) + 1;
+//randomDieRollOutcome = Math.random(1, 6);
+
+console.log(result);
+console.log(randomDieRollOutcome);
+
+
+
+//Pre June 7
+
 //alert('Hello From Javascript Land')
-var firstName = 'Chris';
+/*var firstName = 'Chris';
 console.log(firstName);
 firstName = 'Phil';
 console.log(firstName);
@@ -55,7 +83,28 @@ console.log('smallest/down', Math.floor(small));
 console.log('smallest/down', Math.floor(Math.min(0.9, 4.8, 1.5)));
 console.log('largest/up:', Math.ceil(Math.max(0.9, 4.8, 1.5)));
 
-console.log('random whole', Math.floor(Math.random() * 10));
+console.log('random whole', Math.floor(Math.random() * 10));*/
+
+/*//Fun with strings
+var greeting = 'hello!';
+var orderCode = 'GSX-1149';
+var longString = 'fngsjng/nfsjgnfao/ndajgasnj/nfadsj gdjk/Hiiiiiiiiiiiii';
+console.log(orderCode.substring(5));
+console.log(orderCode.replace('GSX-', ''));
+
+console.log(window.location.pathname);
+console.log(longString.split('/'));
+console.log(greeting.toUpperCase());
+
+var p1 = 'js';
+var p2 = 'is';
+var p3 = 'cool';
+var cString = p1 + '-' + p2 + '-' + p3;
+console.log(cString.toUpperCase());
+
+//console.log(p1 + '-' + p2 + '-' + p3);*/
+
+
 
 
 

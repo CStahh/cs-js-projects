@@ -1,4 +1,20 @@
-//Type coercion
+//A quick intro to functions
+function add (a, b) {
+    //console.log('Returning:', a, b);
+    return a + b;
+};
+console.log(add(128, 3));
+
+var a = add(1, 4);
+var b = add(14, 268);
+console.log(a, b);
+
+
+//function declarations
+
+
+
+/*//Type coercion
 var a = 4;
 var b = 'hi';
 console.log(a + b);
@@ -20,7 +36,7 @@ var randomDieRollOutcome = Math.floor(Math.random() * 6) + 1;
 //randomDieRollOutcome = Math.random(1, 6);
 
 console.log(result);
-console.log(randomDieRollOutcome);
+console.log(randomDieRollOutcome);*/
 
 
 

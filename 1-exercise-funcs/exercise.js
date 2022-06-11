@@ -11,6 +11,9 @@ The call to console.log should first have the string
 ‘Called with’ (case sensitive) then the first argument,
 and then the second argument.
 */
+function logArgs (a, b) {
+    console.log('Called with', a, b);
+}
 
 
 
@@ -34,3 +37,10 @@ For example:
 extractNumber(‘GSX-444’); // returns 444
 extractNumber(‘GSX-9867990’); // returns 9867990
 */
+
+var num = 'GSX-444';
+function extractNumber (num) {
+    num = num.substring(4);
+    //console.log(Number(a));
+    return Number(num);
+};

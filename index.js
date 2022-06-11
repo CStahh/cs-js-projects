@@ -1,4 +1,13 @@
-//A quick intro to functions
+//Boolean equality operators
+var a = 1;
+var b = 10;
+console.log(a === b);
+console.log('aaa' > 'b');
+console.log(false && (false || true));
+
+
+
+/*//A quick intro to functions
 function add (a, b) {
     //console.log('Returning:', a, b);
     return a + b;
@@ -7,7 +16,7 @@ console.log(add(128, 3));
 
 var a = add(1, 4);
 var b = add(14, 268);
-console.log(a, b);
+console.log(a, b);*/
 
 
 //function declarations

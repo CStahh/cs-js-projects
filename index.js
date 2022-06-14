@@ -5,6 +5,16 @@ console.log(a === b);
 console.log('aaa' > 'b');
 console.log(false && (false || true));
 
+var magicNumber = 10;
+function isNotEqualToMagicNumber(x) {
+    //var magicNumber = 10;
+    return !(x === magicNumber);
+}
+
+console.log(isNotEqualToMagicNumber(9));
+
+
+
 
 
 /*//A quick intro to functions

@@ -1,17 +1,34 @@
 //Boolean equality operators
 var a = 1;
 var b = 10;
-console.log(a === b);
-console.log('aaa' > 'b');
-console.log(false && (false || true));
+//console.log(a === b);
+//console.log('aaa' > 'b');
+//console.log(false && (false || true));
 
 var magicNumber = 10;
 function isNotEqualToMagicNumber(x) {
-    //var magicNumber = 10;
-    return !(x === magicNumber);
+    var magicNumber = 10;
+    return (x === magicNumber);
 }
 
-console.log(isNotEqualToMagicNumber(9));
+//console.log(isNotEqualToMagicNumber(10));
+
+//if and else
+function isBiggerThanMagicNumber (x) {
+    var magicNumber = 10;
+    if (x === magicNumber) {
+        console.log(x, 'is equalt to the magic number');}
+
+        else if (x > magicNumber) {
+            console.log(x, 'is greater than the magic number')
+        }
+        else if (x < magicNumber) {
+            console.log(x, 'is less than the magic number')
+        }
+    }
+console.log(isBiggerThanMagicNumber(6));
+
+//Truthy and falsy
 
 
 

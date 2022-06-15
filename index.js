@@ -1,3 +1,20 @@
+//Truthy and falsy
+//console.log(1 && true);
+//truthy is value that can be coercer to being boolean true- vice versa falsey
+var hasValidCountry = true;
+var countryEntered = 'England';
+var country = hasValidCountry && countryEntered;
+console.log(country);
+
+function createUser (email, password, name) {
+    return {
+        email: email,
+        password: password,
+        name: name || '',
+    }
+}
+console.log(createUser('c@r', 'abc', ''));
+
 //Boolean equality operators
 var a = 1;
 var b = 10;

@@ -1,10 +1,38 @@
+//The ternary operator (expresion instead of statement)
+function checkNumber (x) {
+    var magicNumber = 10;
+    return x > magicNumber ? 'x is bigger than mag num':
+     'x is less than or equal to the magic num';
+    /*if (x > magicNumber) {
+        return 'x is bigger than mag num';}
+        else {
+            return 'x is less than or equal to the magic num';
+        }*/
+}
+//console.log(checkNumber(11));
+//if/else vs ternary
+
+var magicNumber = 10;
+var x = 4;
+/*if (x > magicNumber) {
+    console.log('x is bigger than mag num');
+    alert('You beat the magic num');
+    } else {
+        alert('better luck next time');
+    }*/
+console.log(x > magicNumber ?
+    'x is bigger':
+    'x is equal or smaller');
+
+
+
 //Truthy and falsy
 //console.log(1 && true);
 //truthy is value that can be coercer to being boolean true- vice versa falsey
 var hasValidCountry = true;
 var countryEntered = 'England';
 var country = hasValidCountry && countryEntered;
-console.log(country);
+//console.log(country);
 
 function createUser (email, password, name) {
     return {
@@ -13,7 +41,7 @@ function createUser (email, password, name) {
         name: name || '',
     }
 }
-console.log(createUser('c@r', 'abc', ''));
+//console.log(createUser('c@r', 'abc', ''));
 
 //Boolean equality operators
 var a = 1;
@@ -43,7 +71,7 @@ function isBiggerThanMagicNumber (x) {
             console.log(x, 'is less than the magic number')
         }
     }
-console.log(isBiggerThanMagicNumber(6));
+//console.log(isBiggerThanMagicNumber(6));
 
 //Truthy and falsy
 

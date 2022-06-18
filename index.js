@@ -1,4 +1,6 @@
-//The ternary operator (expresion instead of statement)
+//What is an array
+
+/*//The ternary operator (expresion instead of statement)
 function checkNumber (x) {
     var magicNumber = 10;
     return x > magicNumber ? 'x is bigger than mag num':
@@ -12,7 +14,7 @@ function checkNumber (x) {
 //console.log(checkNumber(11));
 //if/else vs ternary
 
-var magicNumber = 10;
+/*var magicNumber = 10;
 var x = 4;
 /*if (x > magicNumber) {
     console.log('x is bigger than mag num');
@@ -20,9 +22,9 @@ var x = 4;
     } else {
         alert('better luck next time');
     }*/
-console.log(x > magicNumber ?
+/*console.log(x > magicNumber ?
     'x is bigger':
-    'x is equal or smaller');
+    'x is equal or smaller');*/
 
 
 

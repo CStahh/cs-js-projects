@@ -20,13 +20,16 @@ like they know everything when they don’t just by looking the answers up ;)
 See here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder
 */
 
-function isEven (x) {
+/*function isEven (x) {
     if (x % 2 === 0) {
         return true;}
     else {
         return false;} 
+}*/
+//** use ternary.... or just expression 'x % 2 ===0
+function isEven (x) {
+    return (x % 2 === 0);
 }
-
 
 /*
 Task 2
@@ -50,16 +53,14 @@ As always, the string results must match *exactly* what I’ve put here
 */
 
 function getExamResult (x) {
+    if (x === 0) {
+        return 'Epic Fail';
+    }
     if (x > 100) {
-        return (String(x), 'Cheat');
+        return 'Cheat';
     }
-    else if (x == 0) {
-        return (String(x), 'Epic Fail');
+    if (x >= 50) {
+        return 'Pass';
     }
-    else if (x < 50) {
-        return (String(x), 'Fail');
-    }
-    else if ((x >= 50) && (x < 100)) {
-        return (String(x), 'Pass');
-    }
+       return 'Fail';
 }

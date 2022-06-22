@@ -1,3 +1,34 @@
+// add and remove items...push = num at end, pop remove AND RETURN num at end
+//unshift - add item to start, shift, remove AND RETURN item from start
+
+var results = [
+    99,
+    26,
+    44,
+    22,
+    84,
+]
+console.log(results);
+
+//results[5] = 70;
+//results[results.length] = 70;
+results.push(70);
+
+console.log(results);
+
+console.log(results.pop());
+console.log(results);
+
+results.unshift(100);
+console.log(results);
+
+results.shift();
+console.log(results);
+results.unshift(1);
+console.log(results);
+
+
+
 //What is an array....lists
 var numwords = [
     'one',

@@ -1,4 +1,34 @@
-//What is an array
+//What is an array....lists
+var numwords = [
+    'one',
+    'two',
+    'three',
+    'four',
+];
+console.log(numwords.length);
+
+var favLanguages = [
+    'js',
+    'solidity',
+    'css',
+    'pcl',
+];
+console.log(favLanguages.length);
+console.log(favLanguages);
+
+console.log(favLanguages[2]);
+
+var varList = [
+    3.2,
+    'hi',
+    {name: 'object', reason: 'example'},
+    null,
+    ['c', 'a', 's']
+];
+console.log(varList[4][0]);
+//**arrays are magic objects that act as lists */
+
+
 
 /*//The ternary operator (expresion instead of statement)
 function checkNumber (x) {
@@ -10,7 +40,7 @@ function checkNumber (x) {
         else {
             return 'x is less than or equal to the magic num';
         }*/
-}
+//}
 //console.log(checkNumber(11));
 //if/else vs ternary
 

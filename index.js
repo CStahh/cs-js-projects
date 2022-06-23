@@ -1,7 +1,45 @@
+//manipulatiing arrays
+var c1 = [10, 4, 18, 98];
+var c2 = [12, 68, 44, 96];
+var c3 = [74, 76, 82, 68];
+
+console.log(c1.concat(c2));
+
+var allResults = c1.concat(c2, c3);
+
+var codeLanguage = [
+    'js',
+    'python',
+    'pcl',
+    'solidity',
+    'css',
+    'html',
+];
+
+var mostPop = codeLanguage.slice(0, 3);
+console.log(mostPop);
+
+var popSlice = codeLanguage.slice(2);
+console.log(popSlice);
+
+// inserting
+//codeLanguage.splice(2, 0, 'typescript');
+console.log(codeLanguage);
+
+//replacing 2 items with 1
+codeLanguage.splice(2, 2, 'typescript');
+console.log(codeLanguage);
+
+//replace 1 item with none
+codeLanguage.splice(2, 1);
+console.log(codeLanguage);
+
+
+
 // add and remove items...push = num at end, pop remove AND RETURN num at end
 //unshift - add item to start, shift, remove AND RETURN item from start
 
-var results = [
+/*var results = [
     99,
     26,
     44,
@@ -25,12 +63,12 @@ console.log(results);
 results.shift();
 console.log(results);
 results.unshift(1);
-console.log(results);
+console.log(results);*/
 
 
 
 //What is an array....lists
-var numwords = [
+/*var numwords = [
     'one',
     'two',
     'three',
@@ -56,7 +94,7 @@ var varList = [
     null,
     ['c', 'a', 's']
 ];
-console.log(varList[4][0]);
+console.log(varList[4][0]);*/
 //**arrays are magic objects that act as lists */
 
 

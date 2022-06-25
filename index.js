@@ -1,5 +1,42 @@
+//iterating with for loops
+//same action on each item - log index and value of each element
+var language = [
+    'js',
+    'css',
+    'pcl',
+];
+
+for(var i = 0; i < language.length; i++) {
+    console.log(i, language[i]);
+}
+
+console.log('-------');
+
+for(var i = 1; i < 11; i++) {
+    console.log(i);
+}
+
+console.log('-------');
+
+for(var i = 10; i > 0; i--) {
+    console.log(i);
+}
+
+function avg(list) {
+    var total = 0;
+    for(var i = 0; i < list.length; i++) {
+        total += list[i];
+    };
+return total / list.length;
+};
+
+var results = [82, 17, 91,];
+console.log(avg(results));
+
+
+
 //manipulatiing arrays
-var c1 = [10, 4, 18, 98];
+/*var c1 = [10, 4, 18, 98];
 var c2 = [12, 68, 44, 96];
 var c3 = [74, 76, 82, 68];
 

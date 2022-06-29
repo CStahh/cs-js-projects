@@ -11,10 +11,14 @@ var myList = [‘a’, ‘b’, ‘c’, ‘d’];
 remove(myList, 2);
 // myList is now [‘a’, ‘b’, ‘d’];
 */
-function removeList(list, i) {
-    var arr = [];
-    arr.splice(i, 1);
+
+var arrr = [1, 2, 3, 4, 5, 6];
+function remove(list, i) {
+    //var arr = [];
+    list.splice(i, 1);
 };
+
+console.log(remove(arrr, 2));
 
 
 /*Task 2
@@ -47,6 +51,22 @@ You’ll probably also have to use an if/else statement
 or a ternary at some point...
 */
 
+var myList = ['a', 'b', 'c', 'd'];
+
+function reversed(list) {
+    var word = '';
+    for(var i = list.length - 1; i >= 0; i--) {
+        word = (word + list[i]);
+        if (i !== 0) {
+            word = word + ','
+        }
+    }
+    //word.slice(word.length);
+    return word;
+    //console.log(word);
+}
+
+console.log(reversed(myList));
 
 /*Task 3
 
@@ -66,3 +86,15 @@ var scores = [50, 120, 180, 10];
 var percentages = calculatePercentages(scores, 200);
 // percentages: [25, 60, 90, 5]
 */
+function calculatePercentages(scores, totalPossibleScore) {
+   var score = [];
+    for(var i = 0; i < scores.length; i++) {
+        score.push((scores[i] / totalPossibleScore) * 100);
+    }
+    return score;
+};
+var grades = [100, 54, 22, 98 ];
+console.log(calculatePercentages(grades, 500));
+ 
+
+

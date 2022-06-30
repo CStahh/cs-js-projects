@@ -1,6 +1,21 @@
+//Debugging - IMPORTANT! - finding mistakes and fixing them
+//Stage 1 debug - gathering info
+function revered(list) {
+    console.log(list);
+    var result = '';
+    for (var i = list.length - 1; i >= 0; i--) {
+        result = result + list[i] + ',';
+    }
+};
+
+
+//Debugging
+//--------------------------------------------------------------
+
+
 //iterating with for loops
 //same action on each item - log index and value of each element
-var language = [
+/*var language = [
     'js',
     'css',
     'pcl',
@@ -31,7 +46,7 @@ return total / list.length;
 };
 
 var results = [82, 17, 91,];
-console.log(avg(results));
+console.log(avg(results));*/
 
 
 

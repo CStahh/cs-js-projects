@@ -1,12 +1,18 @@
 //Debugging - IMPORTANT! - finding mistakes and fixing them
 //Stage 1 debug - gathering info
-function revered(list) {
-    console.log(list);
-    var result = '';
+
+//Using the debugger
+// 
+
+function reversed(list) {
+    //console.log(list);
+    debugger;
+    var result = ' ';
     for (var i = list.length - 1; i >= 0; i--) {
         result = result + list[i] + ',';
     }
 };
+reversed(['foo ', 'bar ', 'bac ']);
 
 
 //Debugging

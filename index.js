@@ -1,3 +1,27 @@
+//ARRAY FUNCTIONS
+//array iterator functions
+//forEach
+var list = ['js', 'ruby', 'php'];
+
+for(var i = 0; i < list.length; i++) {
+    console.log(i, list[i]);
+};
+
+//eqivalent
+list.forEach(function (currentItem, i) {
+    console.log(i, currentItem);
+});
+
+list.reverse().forEach(function (currentItem, i) {
+    console.log(i, currentItem);
+});
+
+
+
+//Array functions above
+//--------------------------------------------------------------
+
+
 //Debugging - IMPORTANT! - finding mistakes and fixing them
 //Stage 1 debug - gathering info
 
@@ -6,7 +30,7 @@
 
 function reversed(list) {
     //console.log(list);
-    debugger;
+    //debugger;
     var result = ' ';
     for (var i = list.length - 1; i >= 0; i--) {
         result = result + list[i] + ',';
@@ -15,7 +39,7 @@ function reversed(list) {
 reversed(['foo ', 'bar ', 'bac ']);
 
 
-//Debugging
+//Debugging above
 //--------------------------------------------------------------
 
 

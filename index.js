@@ -1,19 +1,52 @@
 //ARRAY FUNCTIONS
 //array iterator functions
+
+// Map - transform value into something different - e.g., percentages from scores
+var nums = [10, 100, 50, 60];
+
+function x10(num) {
+    return num * 10;
+};
+console.log(nums);
+
+var numsX10 = nums.map(x10);
+
+
+//exams
+function percentOld(scores, totalScore) {
+    var per = [];
+    for (var i = 0; i < scores.length; i++) {
+        per.push( (100 / totalScore) * scores[i]);
+    };
+    return per;
+}
+
+console.log('Pers:', percentOld([10, 20, 30], 200));
+
+//now map
+function calcPer(scores, totalScore) {
+    return scores.map(function(score) {
+        return (100/totalScore) * score;
+    });
+
+}
+console.log('Example of map: ',calcPer([20, 100, 200], 500));
+
+
 //forEach
 var list = ['js', 'ruby', 'php'];
 
 for(var i = 0; i < list.length; i++) {
-    console.log(i, list[i]);
+    //console.log(i, list[i]);
 };
 
 //eqivalent
 list.forEach(function (currentItem, i) {
-    console.log(i, currentItem);
+    //console.log(i, currentItem);
 });
 
 list.reverse().forEach(function (currentItem, i) {
-    console.log(i, currentItem);
+    //console.log(i, currentItem);
 });
 
 

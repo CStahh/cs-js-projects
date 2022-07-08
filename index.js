@@ -32,6 +32,25 @@ function calcPer(scores, totalScore) {
 }
 console.log('Example of map: ',calcPer([20, 100, 200], 500));
 
+//reduce - takes an array with multiple values and converts to single value
+var nums = [3, 7, 12, 28];
+
+var total = 0;
+for (var i = 0; i < nums.length; i++) {
+    total = total + nums[i];
+};
+
+console.log('this is the total:', total);
+
+var redTotal = nums.reduce(
+    function (runTotal, currentVal) {
+        return runTotal + currentVal;
+    }, 0
+);
+console.log('this is the red total:', redTotal);
+
+var items = ['hi', 'hello', 'sup'];
+
 
 //forEach
 var list = ['js', 'ruby', 'php'];
@@ -48,7 +67,6 @@ list.forEach(function (currentItem, i) {
 list.reverse().forEach(function (currentItem, i) {
     //console.log(i, currentItem);
 });
-
 
 
 //Array functions above

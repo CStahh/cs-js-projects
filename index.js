@@ -1,10 +1,26 @@
 //ARRAY FUNCTIONS
 //array iterator functions
 
-// Map - transform value into something different - e.g., percentages from scores
-var nums = [10, 100, 50, 60];
+//filter
+function isEven (num) {
+    return (num % 2 == 0);
+}
 
-function x10(num) {
+var nums = [27, 6, 4, 17, 12, 28];
+//nums.filter(isEven);
+
+
+//console.log(isEven(nums));
+console.log(nums.filter(isEven));
+
+console.log(nums);
+
+
+
+// Map - transform value into something different - e.g., percentages from scores
+//var nums = [10, 100, 50, 60];
+
+/*function x10(num) {
     return num * 10;
 };
 console.log(nums);
@@ -33,7 +49,7 @@ function calcPer(scores, totalScore) {
 console.log('Example of map: ',calcPer([20, 100, 200], 500));
 
 //reduce - takes an array with multiple values and converts to single value
-var nums = [3, 7, 12, 28];
+//var nums = [3, 7, 12, 28];
 
 var total = 0;
 for (var i = 0; i < nums.length; i++) {

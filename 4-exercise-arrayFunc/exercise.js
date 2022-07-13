@@ -20,7 +20,7 @@ toFixed:
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
 
-Example useage:
+Example useage:*/
 
 var prices = [
 	20,
@@ -29,13 +29,15 @@ var prices = [
 	299.99,
 ];
 
-var pricesWithTax = withTax(prices)
+function withTax () {}
+
+//var pricesWithTax = withTax(prices)
+
 
 //pricesWithTax: [24, 131.4, 4.79, 359.99]
-*/
 
 
-/*
+
 Task 2
 
 The rainfall per quarter (3 month period) in mm of a 

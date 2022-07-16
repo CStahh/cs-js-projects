@@ -29,7 +29,11 @@ var prices = [
 	299.99,
 ];
 
-function withTax () {}
+function withTax (tPrice) {
+	prices.forEach( {
+		
+	});
+}
 
 //var pricesWithTax = withTax(prices)
 

@@ -1,3 +1,22 @@
+//Functions in depth
+//Function declarations vs expressions
+function addDeclaration (a,b) {
+    return a + b;
+}
+
+var addExpression = function (a, b) {
+    return a + b;
+};
+
+var myArray = [];
+
+myArray.map(function (x) {
+    return x * 10;
+});
+
+//Functions in depth, above
+//************************************************* */
+
 //ARRAY FUNCTIONS
 //array iterator functions
 
